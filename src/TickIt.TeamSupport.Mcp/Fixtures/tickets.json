@@ -1,0 +1,77 @@
+{
+  "tickets": [
+    {
+      "id": "TS-10231",
+      "number": "10231",
+      "title": "Cannot post invoice batch - error 'GL period locked'",
+      "description": "User in Accounts is trying to post the March invoice batch in GOLD Classic and gets 'GL period locked' even though the period was reopened yesterday by Finance. Blocking month-end.",
+      "priority": "P2",
+      "status": "New",
+      "category": "known-issue-match",
+      "product": "Classic",
+      "requesterEmail": "j.ackroyd@example-dealer.co.uk",
+      "createdAt": "2026-09-15T08:12:00Z",
+      "tags": ["finance", "gl", "period-lock"]
+    },
+    {
+      "id": "TS-10232",
+      "number": "10232",
+      "title": "Cannot log in to GOLD Cloud - password reset loop",
+      "description": "User resets password via the emailed link, logs in successfully, then is immediately prompted to reset again. Happens every time, three attempts so far.",
+      "priority": "P3",
+      "status": "New",
+      "category": "password-reset",
+      "product": "Cloud",
+      "requesterEmail": "reception@example-dealer.co.uk",
+      "createdAt": "2026-09-16T09:41:00Z",
+      "tags": ["login", "password"]
+    },
+    {
+      "id": "TS-10233",
+      "number": "10233",
+      "title": "Parts pricing showing zero after supplier price file import",
+      "description": "After importing the weekly supplier price file, several hundred parts show a zero retail price in Parts Pricing. Suspect the same issue as TS-10190 last month which was fixed by re-running the import with 'skip zero-cost lines' unticked.",
+      "priority": "P2",
+      "status": "New",
+      "category": "duplicate",
+      "product": "Classic",
+      "requesterEmail": "parts@example-dealer.co.uk",
+      "createdAt": "2026-09-16T14:03:00Z",
+      "tags": ["parts", "pricing", "import"]
+    },
+    {
+      "id": "TS-10234",
+      "number": "10234",
+      "title": "How do I set up a new cost centre in GOLD Cloud?",
+      "description": "We're opening a second workshop location and need a new cost centre set up so job cards report separately. Can you point me to the right screen?",
+      "priority": "P4",
+      "status": "New",
+      "category": "how-to-question",
+      "product": "Cloud",
+      "requesterEmail": "ops@example-dealer.co.uk",
+      "createdAt": "2026-09-17T07:55:00Z",
+      "tags": ["setup", "cost-centre"]
+    },
+    {
+      "id": "TS-10235",
+      "number": "10235",
+      "title": "Service job card totals don't match invoice",
+      "description": "Job card JC-88213 shows labour + parts total of 412.50 but the generated invoice shows 389.10. No discount applied that we can see. Customer is querying the difference.",
+      "priority": "P1",
+      "status": "New",
+      "category": "billing-discrepancy",
+      "product": "Classic",
+      "requesterEmail": "accounts@example-dealer.co.uk",
+      "createdAt": "2026-09-17T10:20:00Z",
+      "tags": ["service", "invoicing", "discrepancy"]
+    }
+  ],
+  "actions": {
+    "TS-10231": [
+      { "id": "A-1", "type": "Comment", "actor": "Support (Katy K.)", "body": "Checked - period shows as open in GL Period Maintenance. Escalating to check the batch header record directly.", "timestamp": "2026-09-15T08:40:00Z" }
+    ],
+    "TS-10233": [
+      { "id": "A-2", "type": "Comment", "actor": "Support (Dev K.)", "body": "Looks identical to TS-10190. Will confirm root cause before suggesting the same fix.", "timestamp": "2026-09-16T15:10:00Z" }
+    ]
+  }
+}

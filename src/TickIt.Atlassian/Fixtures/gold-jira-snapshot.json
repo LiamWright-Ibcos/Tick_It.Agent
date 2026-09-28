@@ -1,0 +1,23 @@
+[
+  {
+    "key": "GOLD-16270",
+    "title": "CDC: permanent source-of-truth documentation in docs/cdc",
+    "url": "https://godealeruk.atlassian.net/browse/GOLD-16270",
+    "snippet": "One verified CDC documentation set so producers, queue layout and GoldCdc are not reverse-engineered again.",
+    "keywords": ["cdc", "documentation", "queue", "goldcdc"]
+  },
+  {
+    "key": "GOLD-16269",
+    "title": "CDC consumer drains existing CDCQ files instead of an EnabledCompanies allow-list",
+    "url": "https://godealeruk.atlassian.net/browse/GOLD-16269",
+    "snippet": "GoldCdc workers should drain every existing CDCQ<ccc>.ISM file rather than relying on a second, drifting company allow-list.",
+    "keywords": ["cdc", "queue", "goldcdc", "companies", "consumer"]
+  },
+  {
+    "key": "GOLD-16268",
+    "title": "JD PRISM Parts Data Extract - Investigate/Clarify Exclusion of Lost Sale Reason Codes 5-8 in Extract",
+    "url": "https://godealeruk.atlassian.net/browse/GOLD-16268",
+    "snippet": "Lost Sales recorded under PLD Reason Codes 5-8 are excluded from the John Deere PRISM Parts Data Extract; investigating whether that's by design.",
+    "keywords": ["prism", "john deere", "parts", "lost sale", "extract"]
+  }
+]

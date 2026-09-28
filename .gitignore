@@ -1,0 +1,27 @@
+## .NET
+bin/
+obj/
+*.user
+.vs/
+
+## Runtime artifacts this project generates
+audit-log.jsonl
+*.log
+
+## Rider/VS Code
+.idea/
+.vscode/
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Terraform (deploy/terraform)
+deploy/terraform/.terraform/
+deploy/terraform/*.tfstate
+deploy/terraform/*.tfstate.*
+deploy/terraform/*.auto.tfvars
+deploy/terraform/secrets.tfvars
+deploy/terraform/*.tfplan
+deploy/terraform/tfplan
+deploy/terraform/crash.log

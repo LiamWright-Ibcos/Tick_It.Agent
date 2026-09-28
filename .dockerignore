@@ -1,0 +1,16 @@
+**/bin/
+**/obj/
+**/.vs/
+**/.vscode/
+**/.idea/
+*.user
+audit-log.jsonl
+*.log
+.git
+.github
+tests/
+docs/
+deploy/terraform/.terraform/
+deploy/terraform/*.tfstate*
+deploy/terraform/*.auto.tfvars
+deploy/terraform/terraform.tfvars

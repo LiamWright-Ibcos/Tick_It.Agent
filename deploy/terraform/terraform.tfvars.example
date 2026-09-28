@@ -1,0 +1,22 @@
+# Copy relevant bits of this into a *.auto.tfvars file (gitignored - see .gitignore) rather
+# than editing this example in place, and never commit real secret values anywhere.
+
+environment = "staging"
+location    = "uksouth"
+image_tag   = "REPLACE_WITH_A_REAL_IMAGE_TAG" # a git SHA or CI build number, never "latest"
+
+# Leave every one of these false/absent until it has actually been signed off. See
+# docs/live-action-executor-signoff.md and the provisioning checklists in
+# first-line-support-poc-architecture.md / phase1-dotnet-build-log.md.
+use_live_executor         = false
+enable_live_notifications = false
+enable_live_tier2_actions = false
+
+# Put ONLY the credentials that have actually been provisioned in here - omit the rest
+# entirely. This whole block belongs in a gitignored secrets.auto.tfvars, not this file.
+# secrets = {
+#   "anthropic-api-key"       = "sk-ant-..."
+#   "atlassian-site-base-url" = "https://godealeruk.atlassian.net"
+#   "atlassian-bearer-token"  = "..."
+#   "teams-webhook-url"       = "https://..."
+# }
